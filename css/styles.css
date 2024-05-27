@@ -1,0 +1,300 @@
+html, body {
+	margin: 0px;
+	padding:0px;
+	font-size: 0px;
+}
+
+body {
+	background-color: #8A817C;
+	font-family:  "Montserrat", sans-serif;
+}
+
+.navigation {
+	color: #94849B;
+	animation-name: profile-navigation;
+	animation-duration:4s;
+}
+
+.navigation ul {
+	margin-top: 0px;
+	list-style: none;
+	padding-left: 0px;
+	text-align: right;
+	height: 50px;
+}
+
+.navigation li {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.navigation a {
+	color: #F4F3EE;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: #463F3A;
+}
+
+.navigation li.threeline-icon {
+	display:none;
+}
+
+.navigation li.threeline-icon:hover {
+	cursor: pointer;
+}
+
+.capa{
+	color: #463F3A;
+}
+
+.capa span {
+	color: #E0AFA0;
+	display: block;
+}
+
+.profile-pic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-pic img {
+	width: 250px;
+	border-radius: 250px;
+	margin-top: 40px;
+	animation-name: profile-capa;
+	animation-duration:2s;
+}
+
+.profile-title {
+	margin-top: 40px;
+	vertical-align: top;
+	text-align: center;
+	animation-name: profile-capa;
+	animation-duration:2s;
+}
+
+.profile-title h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 48px;
+}
+
+.profile-title h2 {
+	font-size: 16px;
+	font-weight:500;
+	margin-top: -10px;
+	color: #BCB8B1;
+}
+
+.curriculo-corpo {
+	padding: 60px 100px 80px 100px;
+	animation-name: profile-capa;
+	animation-duration:2s;
+}
+
+.curriculo-corpo h1{
+	color: #463F3A;
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.curriculo-corpo h4 {
+	color:#E0AFA0;
+	font-weight: 500;
+	padding-top: 2px;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+.curriculo-corpo h2{
+	color: #E0AFA0;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.curriculo-corpo h3{
+	color: #463F3A;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.curriculo-corpo p {
+	color: #F2E9E4;
+	font-size: 14px;
+	font-weight: 100px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.foto {
+	margin-top: -20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cv-pic {
+	width: 300px;
+	border-radius: 300px;
+	margin-top: 40px;
+	margin-right: 10px;
+}
+
+.dados {
+	width: 50%;
+	text-align: justify;
+	padding-right: 30px;
+}
+
+.educacao {
+	width: 50%;
+	text-align: justify;
+	padding-right: 30px;
+}
+
+.habilidade {
+	width: 50%;
+	text-align: justify;
+}
+
+.experiencia {
+	width: 50%;
+	text-align: justify;
+}
+
+.duas-linhas {
+	display: flex;
+}
+
+.sobremim {
+	display: flex;
+}
+
+.contato-corpo {
+	padding: 60px 100px 80px 100px;
+	animation-name: profile-capa;
+	animation-duration:2s;
+}
+
+.contato-corpo h1{
+	color: #E0AFA0;
+	font-weight: 400;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contato-corpo h2{
+	color: #E0AFA0;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.contato-corpo h3{
+	color: #F4F3EE;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+}
+
+.contato-corpo p {
+	color: #F2E9E4;
+	font-size: 22px;
+	font-weight: 100px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.icones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@keyframes profile-capa {
+	0% {opacity: 0; transform: translate(0px, 30px);}
+	100% {opacity: 1; transform: translate(0px, 0px);}
+}
+
+@keyframes profile-navigation {
+	0% {opacity:0;}
+	50% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@media (max-width: 1000px) {
+	.navigation li {
+		display: none;
+	} 
+
+	.navigation li.threeline-icon {
+		display: inline-block;
+	}
+
+	.profile-pic img{
+		margin-top: 20px;
+		max-width: 80%;
+	}
+
+	.profile-title h1{
+		font-size: 30px;
+		margin-top: 0;
+		margin-right: 20px;
+		margin-left: 20px;
+	}		
+
+	.profile-title h2{
+		font-size: 15px;
+		margin-top: 0;
+		margin-right: 20px;
+		margin-left: 20px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.curriculo-corpo {
+		padding: 15px 5% 40px 5%;
+	}
+
+	.cv-pic {
+		float: none;
+		max-width: 100%;
+	}
+
+	.menujs {
+		height: auto;
+	}
+
+	.menujs ul {
+		height: auto;
+		text-align: center;
+		padding-right: 20%;
+		padding-left: 20%;
+	}	
+
+	.menujs li {
+		display: block;
+		border-bottom: solid #F4F3EE 1px;
+		width: 100%;
+		padding: 0;
+	}
+}
